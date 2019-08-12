@@ -1,0 +1,179 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color: #262334;
+    font-family:arial;
+}
+.heading{
+    position:relative;
+    text-align:center;
+    font-family:arial;
+    font-size:90px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #c8430d;
+}
+.container{
+    position:relative;
+    width:90%;
+    padding:10px 0px;
+    left:50%;
+    transform:translate(-50%,0px);
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.login-form{
+    position: relative;
+    padding:0px 120px;
+    width:auto;
+    border-right:2px solid #c8430d;
+
+}
+p{
+    position:relative;
+
+    border-radius:5px;
+    border:2px solid #c8430d;
+    padding:5px 10px;
+    width:100%;
+    color:#c8430d;
+    text-align:center;
+}
+.form-group{
+    position:relative;
+    margin:18px 0px;
+}
+label{
+    font-family:arial;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+input{
+    position:relative;
+    width:100%;
+    padding:4px 8px;
+    font-size:20px;
+    border-radius: 5px;
+    border: solid 3px #ffffff;
+    outline:none;
+    autofill:none;
+}
+
+.description{
+    position:relative;
+    padding:0px 80px;
+
+}
+.heading-2{
+    position:relative;
+    text-align:left;
+    font-family:arial;
+    font-size:75px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #fff;
+}
+
+.quest_details{
+    position:relative;
+    font-family:arial;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+button{
+    position:relative;
+    margin:10px 0px;
+    float:right;
+    right:-20px;
+    border-radius: 5px;
+    border: solid 3px #c8430d;
+    outline:none;
+    padding:3px 25px;
+    background:none;
+    color:white;
+    font-size:22px;
+}
+
+
+
+/*Media query */
+
+@media(max-width:768px)
+{
+    .heading{
+
+        position:relative;
+        width:auto;
+        text-align:left;
+        font-family:arial;
+        font-size:80px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #c8430d;
+
+    }
+    .container{
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom:20px;
+    }
+    .login-form{
+        position: relative;
+        padding:0px 20px;
+        padding-bottom:20px;
+        width:auto;
+        border-right:none;
+        border-bottom:2px solid #c8430d;
+
+    }
+    input{
+        position:relative;
+        width:100%;
+
+    }
+
+    .description{
+        padding:0px 10px ;
+
+    }
+}
+
+
+/*============Submit.php ===============*/
+
+.submit-message{
+    position:absolute;
+    bottom:20px;
+    padding:10px 30px;
+    left:50%;
+    transform:translate(-50%,0%);
+    background:#c8430d;
+    color:white;
+    text-align:center;
+    border-radius:20px;
+}
